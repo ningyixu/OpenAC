@@ -10,4 +10,18 @@ Computing industry is witnessing a boom of customized AI accelerators (FPGAs, AS
  - A compatible device can be easily integrated to supported DL frameworks (Caffe, CNTK, Keras, MxNet, Tensorflow, Theano, Torch …)
  - A well-defined project can potentially boost the customized computing (FPGA, ASICs and ASSPs) eco-system 
 
+## Philosophy of OpenAC
+### Symbolic computing
+AI computation (inference or training) is represented as a graph
+Computing device is responsible to process a subgraph
+Device may only support a limited set of operations
+### Stochastically correct
+Ensure accuracy (over test set), not numerical precision
+Computing solution provider can do pruning, quantization, compression with {accuracy, test data, training data, sub-graph, input tensor}
+### Explicit service level agreement (SLA)
+Online service has rigid latency requirement
+Caller can query the 
+
+
+
 
