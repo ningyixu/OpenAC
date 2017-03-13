@@ -12,16 +12,28 @@ Computing industry is witnessing a boom of customized AI accelerators (FPGAs, AS
 
 ## Philosophy of OpenAC
 ### Symbolic computing
-AI computation (inference or training) is represented as a graph
-Computing device is responsible to process a subgraph
-Device may only support a limited set of operations
+- AI computation (inference or training) is represented as a graph
+- Computing device is responsible to process a subgraph
+- Device may only support a limited set of operations
 ### Stochastically correct
-Ensure accuracy (over test set), not numerical precision
-Computing solution provider can do pruning, quantization, compression with {accuracy, test data, training data, sub-graph, input tensor}
+- Ensure accuracy (over test set), not numerical precision
+- Computing solution provider can do pruning, quantization, compression with {accuracy, test data, training data, sub-graph, input tensor}
 ### Explicit service level agreement (SLA)
-Online service has rigid latency requirement
-Caller can query the 
+- Online service has rigid latency requirement
+- Caller can query the device capability, and estimate the performance
+
+## Scenarios
+
+### Host application calls a local accelerator
+
+### A FPGA team develop AI accelerator for Cloud vendors
+
+### Mobile app calls an AI service in cloud
+
+# Getting started
 
 
+# Documentation
 
-
+# Contributors
+Jian Ouyang, Xiao Lin, Ming Wu,  Wenqiang Wang, Ningyi Xu 
